@@ -1,10 +1,10 @@
 <div class="content">
     <div>
         <div class="text-h5 header-text ">
-            Policy Templates
+            数据共享规则
         </div>
         <div class="text-subtitle-1 font-weight-regular">
-            Overview of the usage policies for information of how often or how long the resource data can be used.
+            关于数据资源的使用频率和时长的规则概述。
         </div>
         <v-row class="no-gutters">
             <add-policy-dialog ref="addPolicyDialog" @policyTemplateSaved="policyTemplateSaved">
@@ -12,13 +12,13 @@
         </v-row>
         <v-row no-gutters>
             <v-col cols="6" md="6" sm="6">
-<!--                <v-select label="Filter by policy" v-model="policyId" :items="catalogs" item-text="title" item-value="id"
+               <v-select label="按规则筛选" v-model="policyId" :items="catalogs" item-text="title" item-value="id"
                           @change="policyChanged">
-                </v-select>-->
+                </v-select>
             </v-col>
-<!--            <v-col cols="12" md="6" sm="12">
-                <v-text-field v-model="search" append-icon="mdi-magnify" label="Search" single-line hide-details></v-text-field>
-            </v-col>-->
+           <v-col cols="12" md="6" sm="12">
+                <v-text-field v-model="search" append-icon="mdi-magnify" label="搜索" single-line hide-details></v-text-field>
+            </v-col>
         </v-row>
         <v-row>
             <v-col cols="12" md="12" sm="12">

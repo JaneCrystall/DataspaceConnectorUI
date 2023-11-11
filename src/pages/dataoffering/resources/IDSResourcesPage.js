@@ -16,23 +16,23 @@ export default {
         return {
             search: '',
             headers: [{
-                text: 'Creation date',
+                text: '创建时间',
                 value: 'creationDate',
                 width: 135
             }, {
-                text: 'Title',
+                text: '标题',
                 value: 'title'
             },
             {
-                text: 'Keywords',
+                text: '关键词',
                 value: 'keywords'
             },
             {
-                text: 'Brokers',
+                text: '数据管理服务',
                 value: 'brokerNames'
             },
             {
-                text: 'Agreem.',
+                text: '共享协议',
                 value: 'agreements',
                 align: 'right',
                 width: 100

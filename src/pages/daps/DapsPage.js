@@ -16,7 +16,7 @@ export default {
                 text: 'Title',
                 value: 'title'
             }, {
-                text: 'URL',
+                text: '地址',
                 value: 'location'
             }, {
                 text: 'Whitelisted',

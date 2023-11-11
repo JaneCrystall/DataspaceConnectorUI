@@ -1,31 +1,31 @@
 <div class="content">
   <div>
       <div class="text-h5 header-text ">
-         Data Offerings
+         数据产品
       </div>
       <div class="text-subtitle-1 font-weight-regular">
-          Overview of all currently offered IDS resources.
+          当前提供的所有数据空间资源预览。
       </div>
       <v-row>
           <v-col md="2" sm="12" class="pb-0">
-              <v-btn elevation="1" color="primary" class="buttontext--text addresourcebutton" to="/addresource">Add Offering
+              <v-btn elevation="1" color="primary" class="buttontext--text addresourcebutton" to="/addresource">添加数据产品
               </v-btn>
           </v-col>
       </v-row>
     <v-row>
         <v-col class="pb-0" cols="12" md="3" sm="6">
-            <v-select label="Filter by catalog" v-model="catalogId" :items="catalogs" item-text="title" item-value="id"
+            <v-select label="按目录筛选" v-model="catalogId" :items="catalogs" item-text="title" item-value="id"
                       @change="catalogChanged">
             </v-select>
         </v-col>
       <v-col class="pb-0"  cols="12" md="3" sm="12">
-        <v-text-field v-model="search" append-icon="mdi-magnify" label="Search" single-line hide-details></v-text-field>
+        <v-text-field v-model="search" append-icon="mdi-magnify" label="搜索" single-line hide-details></v-text-field>
       </v-col>
     </v-row>
     <v-row no-gutters>
       <v-col cols="12" md="11" sm="12">
         <v-data-table :headers="headers" :items="resources" :items-per-page="5" :search="search" :sort-by.sync="sortBy"
-          :sort-desc.sync="sortDesc" no-data-text="No resources available">
+          :sort-desc.sync="sortDesc" no-data-text="没有可获得的产品">
           <template v-slot:item.agreements="{ item }">
             <v-chip class="resources-page-agreements-button" @click="showAgreements(item)">
               {{ item.agreements.length }}

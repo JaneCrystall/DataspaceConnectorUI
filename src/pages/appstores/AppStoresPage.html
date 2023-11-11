@@ -3,14 +3,14 @@
     </add-app-store-dialog>
     <v-row no-gutters>
         <v-col cols="12" md="3" sm="6">
-            <v-text-field v-model="search" append-icon="mdi-magnify" label="Search" single-line hide-details>
+            <v-text-field v-model="search" append-icon="mdi-magnify" label="搜索" single-line hide-details>
             </v-text-field>
         </v-col>
     </v-row>
     <v-row no-gutters>
         <v-col cols="12" md="11" sm="12">
             <v-data-table v-model="selected" :headers="headers" :items="appstores" :items-per-page="5" :search="search"
-                item-key="id" no-data-text="No appstores available">
+                item-key="id" no-data-text="无可获得的应用">
                 <template v-slot:item.actions="{ item }">
                     <v-tooltip bottom>
                         <template v-slot:activator="{ on, attrs }">

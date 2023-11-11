@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div class="text-h5 header-text">
-      Dashboard
+      指挥舱
     </div>
     <v-row>
       <v-col

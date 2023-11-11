@@ -1,16 +1,15 @@
 <dashboard-card class="offeredresourcescard ">
     <template v-slot:header>
-        Data Offerings
+        数据产品
     </template>
     <template v-slot:content>
-        <div class="text-center" v-if="offeredResourcesAvailable">
-            <div class="kpi_number">{{ totalNumber }}</div>
-            <div class="overline">{{ totalSize }} {{ totalSizeType }}</div>
+        <div class="text-center kpi_number">
+            178
         </div>
     </template>
     <template v-slot:button>
         <v-btn class="no-uppercase" color="primary" :to="{path:'addresource'}" depressed>
-            Share Data
+            分享数据
         </v-btn>
     </template>
 </dashboard-card>

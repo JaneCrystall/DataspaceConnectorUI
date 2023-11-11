@@ -13,10 +13,10 @@ export default {
         return {
             search: '',
             headers: [{
-                text: 'Title',
+                text: '标题',
                 value: 'title'
             }, {
-                text: 'URL',
+                text: '地址',
                 value: 'url'
             },
             {

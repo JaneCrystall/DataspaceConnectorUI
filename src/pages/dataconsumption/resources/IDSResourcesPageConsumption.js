@@ -13,19 +13,19 @@ export default {
         return {
             search: '',
             headers: [{
-                text: 'Creation date',
+                text: '创建时间',
                 value: 'creationDate',
                 width: 135
             }, {
-                text: 'Title',
+                text: '标题',
                 value: 'title'
             },
             {
-                text: 'Keywords',
+                text: '关键词',
                 value: 'keywords'
             },
             {
-                text: 'Subscribed',
+                text: '提交',
                 value: 'hasSubscription',
                 width: 100
             },

@@ -21,19 +21,19 @@ export default {
     getPageStructure() {
         return [{
             path: "dashboard",
-            name: "Dashboard",
+            name: "指挥舱",
             icon: "mdi-view-dashboard",
             component: DashboardPage,
             subpages: []
         },
         {
             path: null,
-            name: "Data Offering",
+            name: "数据产品",
             icon: "mdi-application-export",
             component: null,
             subpages: [{
                 path: "idsresourcesoffering",
-                name: "Offerings",
+                name: "数据产品元数据",
                 component: IDSResourcesPage,
                 subpages: [{
                     path: "addresource",
@@ -48,7 +48,7 @@ export default {
                 }]
             }, {
                 path: "policytemplates",
-                name: "Policy Templates",
+                name: "数据共享规则",
                 component: ResourcePolicyPage,
                 subpages: [],
             }, {
@@ -76,12 +76,12 @@ export default {
             }]
         }, {
             path: null,
-            name: "Data Consumption",
+            name: "数据消费",
             icon: "mdi-file-document-outline",
             component: null,
             subpages: [{
                 path: "resourcerequests",
-                name: "Requests",
+                name: "数据请求",
                 component: IDSResourcesPageConsumption,
                 subpages: [{
                     path: "requestresourceconsumption",
@@ -108,19 +108,19 @@ export default {
             }]
         }, {
                 path: null,
-                name: "IDS Ecosystem",
+                name: "数据空间生态系统",
                 icon: "mdi-briefcase-variant-outline",
                 component: null,
                 subpages: [
                     {
                         path: "brokers",
-                        name: "Brokers",
+                        name: "数据管理服务",
                         icon: "mdi-briefcase-variant-outline",
                         component: BrokersPage,
                         subpages: []
                     }, {
                         path: "appstores",
-                        name: "App Stores",
+                        name: "数据应用市场",
                         icon: "mdi-storefront-outline",
                         component: AppStoresPage,
                         subpages: [{

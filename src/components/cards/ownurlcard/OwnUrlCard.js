@@ -8,7 +8,7 @@ export default {
     },
     data() {
         return {
-            defaultEndpoint: "No URL endpoint defined",
+            defaultEndpoint: "未定义链接地址",
             text: "Copy to share your endpoint",
             copyText: ''
         };
