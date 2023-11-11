@@ -33,7 +33,7 @@ export default {
             component: null,
             subpages: [{
                 path: "idsresourcesoffering",
-                name: "数据产品元数据",
+                name: "元数据",
                 component: IDSResourcesPage,
                 subpages: [{
                     path: "addresource",
